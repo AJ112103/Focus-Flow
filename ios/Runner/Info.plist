@@ -2,6 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Record audio -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Focus Flow needs microphone access to record audio notes and tic samples.</string>
+
+	<!-- Post notifications -->
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>Allow notifications so we can remind you of focus sessions and important updates.</string> <!-- iOS 15+ :contentReference[oaicite:0]{index=0} -->
+
+	<!-- Read / write external storage -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We save session snapshots to your photo library only when you ask us to.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Focus Flow needs permission to export images or videos to your photo library.</string>
+
+	<!-- Foreground/background work for push messages -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array> <!-- enables silent push/background FCM handling -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
